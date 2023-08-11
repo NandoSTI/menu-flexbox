@@ -1,0 +1,147 @@
+body{
+    font-family: 'Public Sans', sans-serif;
+    font-size: 15px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 45px;
+}
+
+.container .logo-title{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.container .logo-title img{
+    width: 45px;
+    height: 42px;
+}
+
+.container .logo-title h1{
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.container .menu ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    letter-spacing: 1px;
+    gap: 30px;
+}
+
+.container .menu .sobre{
+    padding: 11px 7px;
+    transition: .3s ease-in-out;
+}
+
+.container .menu .sobre:hover{
+    background-color: var(--bg-bottom);
+    color: var(--hover-color);
+}
+
+.container .menu .cadastro{
+    padding: 10px 20px;
+    transition: .3s ease-in-out;
+    font-weight: 300;
+}
+
+.container .menu .cadastro:hover{
+    background-color: var(--bg-bottom);
+    border-radius: 10px;
+    color: var(--hover-color);
+}
+
+@media(max-width: 768px){
+    .container {
+        display: block;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .container .logo-title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 80px;
+    }
+
+    .container .logo-title h1 {
+        font-size: 40px;
+    }
+
+    .container .menu ul {
+        display: flex;
+        flex-direction: column;
+        padding-top: 100px;
+        justify-content: center;
+        align-items: center;
+        font-weight: 400;
+        font-size: 40px;
+        letter-spacing: 1px;
+        gap: 50px;
+    }
+
+    .container .menu .sobre{
+        padding: 17px 40px;
+    }
+
+    .container .menu .cadastro{
+        padding: 15px 22px;
+        font-size: 18px;
+        font-weight: 300;
+    } 
+}
+
+@media (max-width: 425px) {
+    .container {
+        display: block;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .container .logo-title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+    }
+
+    .container .logo-title h1 {
+        font-size: 40px;
+    }
+
+    .container .menu ul {
+        display: flex;
+        flex-direction: column;
+        padding-top: 80px;
+        justify-content: center;
+        align-items: center;
+        font-weight: 400;
+        font-size: 40px;
+        letter-spacing: 1px;
+        gap: 33px;
+    }
+
+    .container .menu .sobre{
+        padding: 17px 40px;
+    }
+
+    .container .menu .cadastro{
+        padding: 15px 22px;
+        font-size: 18px;
+        font-weight: 300;
+        margin-bottom: 60px;
+    }
+
+
+}
